@@ -3,8 +3,11 @@
 <%= render @group %>
 
 <div>
-  <%= link_to "Edit this group", edit_group_path(@group) %> |
+  <% if can? :update, @group %>
+    <%= link_to "Edit this group", edit_group_path(@group) %> |
+  <%end%>
   <%= link_to "Back to groups", groups_path %>
-
-  <%= button_to "Destroy this group", @group, method: :delete %>
+  <% if can? :update, @group %>
+    <%= button_to "Destroy this group", @group, method: :delete %>
+  <%end%>
 </div>

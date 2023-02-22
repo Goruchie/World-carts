@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_group, only: %i[show edit update destroy]
 
   # GET /groups or /groups.json
@@ -20,7 +21,7 @@ class GroupsController < ApplicationController
   # POST /groups or /groups.json
   def create
     @group = Group.new(group_params)
-
+    @group.user_id = current_user.id
     respond_to do |format|
       if @group.save
         format.html { redirect_to group_url(@group), notice: 'Group was successfully created.' }
