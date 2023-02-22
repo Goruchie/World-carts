@@ -72,6 +72,7 @@ group :test do
 end
 
 # Other gems:
+gem 'cancancan'
 gem 'devise'
 gem 'letter_opener'
 gem 'rubocop', '>= 1.0', '< 2.0'

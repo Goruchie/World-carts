@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
     if user_signed_in?
       super
     else
-      redirect_to welcome_path, notice: 'Please Login to proceed'
+      redirect_to root_path, notice: 'Please Login to proceed'
     end
   end
 
