@@ -4,7 +4,7 @@ class EntitiesController < ApplicationController
 
   # GET /entities or /entities.json
   def index
-    @entities = Entity.all
+    @entities = Entity.where(user_id: current_user.id)
   end
 
   # GET /entities/1 or /entities/1.json
@@ -66,6 +66,6 @@ class EntitiesController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def entity_params
-    params.require(:entity).permit(:author_id, :name, :amount)
+    params.require(:entity).permit(:user_id, :group_id, :name, :amount)
   end
 end

@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
+<% if can? :manage, @group %>
 <%= render @group %>
+<%end%>
 
 <div>
   <% if can? :update, @group %>

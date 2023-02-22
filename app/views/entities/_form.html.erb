@@ -1,4 +1,4 @@
-<%= form_with(model: entity) do |form| %>
+<%= form_with(model: [@group, @entity]) do |form| %>
   <% if entity.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(entity.errors.count, "error") %> prohibited this entity from being saved:</h2>
@@ -11,9 +11,10 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :author_id, style: "display: block" %>
-    <%= form.number_field :author_id %>
+  
+  <div class="caterogy-input-container">
+    <%= form.select :group_id, Group.all.collect {|group| [group. name, group.id]},{
+    include_blank: true} , :required => 'required',   class:"form-select" %>
   </div>
 
   <div>
