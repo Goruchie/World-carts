@@ -13,166 +13,170 @@
  *= require_tree .
  *= require_self
  */
+
 /* Add this to your application.css file */
 
 * {
-    padding: 1px;
-    margin: 0px;
-    list-style-type: none;
-    text-decoration: none;  
-    color: inherit;
-    text-decoration: none; 
-    color: #434b54;
-    overflow-x: hidden;
-    font-family: proxima-nova, sans-serif;
-
+  padding: 1px;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: #434b54;
+  overflow-x: hidden;
+  font-family: proxima-nova, sans-serif;
 }
 
-html, body {
-    padding: 0%;
-    min-height: 100%;      
+html,
+body {
+  padding: 0%;
+  min-height: 100%;
 }
 
 body {
-    background-color: #e6e6e6;
-    background-image: linear-gradient(to bottom, #c9c5c5, #a5a4a4);    
+  background-color: #e6e6e6;
+  background-image: linear-gradient(to bottom, #c9c5c5, #a5a4a4);
 }
 
 .devise-cont {
-    text-align: center;
+  text-align: center;
 }
 
 .page-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#groups, #entities, .total-cont, .total-cont1 {
-    width: 95%;
+#groups,
+#entities,
+.total-cont,
+.total-cont1 {
+  width: 95%;
 }
 
-
-
-#group_name, #group_icon, #entity_name, #entity_amount {
-    width: 100%;
-    height: 6vh;
-    
-    border: none;
-    padding-left: 1vh;
+#group_name,
+#group_icon,
+#entity_name,
+#entity_amount {
+  width: 100%;
+  height: 6vh;
+  border: none;
+  padding-left: 1vh;
 }
 
 input {
-    margin-top: 0.5vh;
-    margin-bottom: 0.5vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
 }
 
-.store-cont, .name-amount, .total-cont, .total-cont1 {    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;    
+.store-cont,
+.name-amount,
+.total-cont,
+.total-cont1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .store-cont {
-    background-color: white;
-    padding: 2vh;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 2vh;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.total-cont, .total-cont1 {
-    align-items: baseline;
-    background-color: white;
-    width: 100%;
-    justify-content: center;
-    
+.total-cont,
+.total-cont1 {
+  align-items: baseline;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
 }
 
 .total-cont1 {
-    width: 80%;
-    justify-content: space-between;
-    
+  width: 80%;
+  justify-content: space-between;
 }
 
 .total-cont {
-    margin-bottom: 0.5vh;
+  margin-bottom: 0.5vh;
 }
 
-.add-store, .add-store1 {
-    text-align: center;
-    padding: 0;
+.add-store,
+.add-store1 {
+  text-align: center;
+  padding: 0;
 }
 
 .add-store1 {
-    width: 100%;
-    text-align:inherit;
+  width: 100%;
+  text-align: inherit;
 }
 
 .submit-btn {
-    border: none;
-    background-color: inherit;
+  border: none;
+  background-color: inherit;
 }
 
-.notice, .alert {
-    text-align: center;    
+.notice,
+.alert {
+  text-align: center;
 }
 
 .icon {
-    width: 8vh;
-    margin-right: 1vh;
+  width: 8vh;
+  margin-right: 1vh;
 }
 
 .data-align {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.nav-container {   
-    width: 100%;
-    display: flex;
-    align-items: center;       
-    justify-content: space-around;
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .nav-section {
-    display: flex;
-    background-color: #3778c2;
-    background-image: linear-gradient(to bottom, #3778c2, #252d96);
-    height: 13vh;
-    align-content: center; 
-    align-items: center;  
+  display: flex;
+  background-color: #3778c2;
+  background-image: linear-gradient(to bottom, #3778c2, #252d96);
+  height: 13vh;
+  align-content: center;
+  align-items: center;
 }
 
 .nav-section1 {
-    display: flex;
-    background-color: #3778c2;
-    height: 10vh;
-    align-items: center; 
-    justify-content: center;
+  display: flex;
+  background-color: #3778c2;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-
 .log-nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;   
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ul-container {
-    display: flex;  
-    width: 100%; 
-    justify-content: space-evenly; 
-    align-items: baseline;     
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: baseline;
 }
 
-.log-out-button, .log-out-button1, .log-out-button2, .new-group {
-    
-    background-color: #5fb523;
+.log-out-button,
+.log-out-button1,
+.log-out-button2,
+.new-group {
+  background-color: #5fb523;
   border: solid 2px #5fb523;
   border-radius: 10px;
-  padding: 0.25vh 0.5vh;
   color: white;
   font-size: 0.5em;
   font-weight: bold;
@@ -181,89 +185,67 @@ input {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to bottom, #5fb523, #3c8113);
   padding: 0;
-  }
-  
-  .log-out-button:hover,  .log-out-button1:hover {
-    background-color: #459715;
-  }
-  
-  .log-out-button:active, .log-out-button1:active {
-    outline: none;
-    box-shadow: none;
-    border-color: #3c7d11;
-    background-color: #3c7d11;
-  }
-  
-  .log-out-button svg, .log-out-button1 svg {
-    margin-right: 0.5em;
-    height: 0.8em;
-    width: 0.8em;
-    fill: white;
-  }
-
-  .log-out-button2, .new-group {
-    font-size: 5vh;
-    padding: 0.5vh 1vh;
-    width: 95%;
-    text-align: center;       
-  }
-
-  .new-group {
-    position: fixed;
-    bottom: 0;
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    
-.add-store-btn {   
-     
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    padding: 0;
-    
 }
 
-.logo, .title {
-    color: white;
-    font-weight: bold;
+.log-out-button2,
+.new-group {
+  font-size: 5vh;
+  padding: 0.5vh 1vh;
+  width: 95%;
+  text-align: center;
+}
+
+.new-group {
+  position: fixed;
+  bottom: 0;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-store-btn {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+}
+
+.logo,
+.title {
+  color: white;
+  font-weight: bold;
 }
 
 .title {
-    font-size: 5vh;
+  font-size: 5vh;
 }
 
 .log-out-button1 {
-    font-size: 5vh;
-    padding: 0.5vh 1vh;
-    width: 100%;
-    text-align: center; 
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    
+  font-size: 5vh;
+  padding: 0.5vh 1vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
 .input-style {
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
 }
 
-
 .home-cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .add-cart {
-    display: flex;
-    margin: 0%;
-    height: 15vh;
-    display: flex;
-    
-    justify-content: center;
+  margin: 0%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
 }
