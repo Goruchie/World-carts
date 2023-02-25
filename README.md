@@ -75,6 +75,16 @@
 
 <!-- LIVE DEMO -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [Live Demo Link](https://world-carts.onrender.com)
+
+- [Loom video Link](https://www.loom.com/share/b7f810b031de4301b92b26fa6b8017fb?t=1)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -141,7 +151,7 @@ To run tests, run the following command:
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Implement_some_UX_improvements]**
-- [ ] **[Improve_desktop_design]**
+- [ ] **[Create_desktop_design]**
 - [ ] **[Implement_a_left_side_menu]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -168,6 +178,7 @@ If you like this project then don't forget to share this project in your connect
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- I would like to thank Gregoire Vella for the design idea (https://www.behance.net/gregoirevella)
 - I would like to thank Microverse for the knowledge impacted.
 - I would like to thank code reviewers for reviewing my code.
 
