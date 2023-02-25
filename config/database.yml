@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: budget_app_u2lq
+  database: budget_app_mjwh
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,4 +81,4 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV["DATABASE_URL"] %>
