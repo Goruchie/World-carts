@@ -1,13 +1,14 @@
-<div id="<%= dom_id group %>">
-
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
-
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
-
+<div class='group-cont' id="<%= dom_id group %>">  
+  <%= link_to group_entities_path(:group_id => group.id), style: "text-decoration: none; color: black;" do %>
+  
+  <div class='store-cont'>
+    <p class='data-align'>
+      <img class='icon' src='<%= group.icon %>'>
+      <%= group.name %>
+    </p>
+                 
+        <p>$<%= Group.total_amount(group) %></p>            
+  </div>
+  <br>
+    <% end %>
 </div>

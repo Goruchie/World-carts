@@ -1,34 +1,48 @@
-<h2>Sign up</h2>
+<div class='nav-section'>
+  <nav class='nav-container'>
+    <a class='logo' href="/"> < Back</a>    
+    <h2 class='title'>REGISTER</a>
+    <h2><%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'log-out-xd' %></h2>      
+  </nav>
+</div>
+<div class='devise-cont'>
+
+
+
+
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.label :name, style: "display: block" %>
-    <%= f.text_field :name %>
+    
+    <%= f.text_field :name, placeholder: 'Full name' %>
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email' %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
+  <span class='minumun'>
+    <% if @minimum_password_length %>    
+    <em >(<%= @minimum_password_length %> characters minimum)</em>    
+    <% end %>
+    </span>
+    <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password (6 characters minimum)' %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Password confirmation' %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+ <div class='add-store-btn'>
+  <div class="add-cart">  
+    <%= f.submit "Sign up", class:'green-btn' %>
+  </div>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+
+
+</div>

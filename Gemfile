@@ -74,5 +74,6 @@ end
 # Other gems:
 gem 'cancancan'
 gem 'devise'
+gem 'jquery-rails'
 gem 'letter_opener'
 gem 'rubocop', '>= 1.0', '< 2.0'
