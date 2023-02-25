@@ -1,20 +1,24 @@
-<%= render 'shared/header' %> 
+
 <div class='home-cont'>
-  <br>
-  <br>
-  <br>
-  <br>
-    <div class='main-login'>
-      <a class='log-out-button1' href='/users/sign_in'>Log in</a>
+
+<h1 class='big-title'>World carts</h1>
+
+<div class='add-store-btn'>
+
+
+    <div class='add-cart'>
+      <a class='green-btn' href='/users/sign_in'>Log in</a>
     </div>
-  <br>
-    <div class='main-login'>
-      <a class='log-out-button1' href='/users/sign_up'>Sign up</a>
+
+    <div class='add-cart'>
+      <a class='green-btn' href='/users/sign_up'>Sign up</a>
     </div>
-  <br>
-    <div class='main-login'>
-    <%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'log-out-button1' %>
-    </div>
+
+    
+    
+
+</div>
+    
 
     
 </div>

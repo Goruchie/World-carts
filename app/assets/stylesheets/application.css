@@ -57,7 +57,7 @@ body {
 #group_name,
 #group_icon,
 #entity_name,
-#entity_amount {
+#entity_amount, #user_email, #user_password, #user_name, #user_password_confirmation {
   width: 100%;
   height: 6vh;
   border: none;
@@ -173,7 +173,7 @@ input {
 .log-out-button,
 .log-out-button1,
 .log-out-button2,
-.new-group {
+.new-group, .green-btn {
   background-color: #5fb523;
   border: solid 2px #5fb523;
   border-radius: 10px;
@@ -212,16 +212,16 @@ input {
 }
 
 .logo,
-.title {
+.title, .log-out-xd {
   color: white;
-  font-weight: bold;
+  font-size: 2vh;
 }
 
 .title {
   font-size: 5vh;
 }
 
-.log-out-button1 {
+.log-out-button1, .green-btn {
   font-size: 5vh;
   padding: 0.5vh 1vh;
   width: 100%;
@@ -241,6 +241,9 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: white;
 }
 
 .add-cart {
@@ -249,3 +252,42 @@ input {
   display: flex;
   justify-content: center;
 }
+
+.big-title {
+    font-size: 6vh;    
+}
+
+.green-btn {
+    background-image: linear-gradient(to bottom, #3778c2, #252d96);
+    border-color: #3778c2;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .log-out-xd {
+    background-color: inherit;
+    color: white;
+    border: none;        
+  }
+
+  #user_password {
+    margin-bottom: 2vh;
+  }
+
+  .minumun {
+    display: none;
+  }
+
+  #user_password {
+    margin-bottom: 1vh;
+  }
+ 
+
