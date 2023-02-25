@@ -1,17 +1,19 @@
 <div id="<%= dom_id entity %>">
-  <p>
-    <strong>Author:</strong>
-    <%= entity.user_id %>
-  </p>
+  
 
-  <p>
-    <strong>Name:</strong>
-    <%= entity.name %>
-  </p>
 
-  <p>
-    <strong>Amount:</strong>
-    <%= entity.amount %>
-  </p>
+  
+      <div class='store-cont name-amount'>
+        <p>
+          <%= entity.name %>:
+        </p>   
+           
+        <p>$<%= entity.amount %></p>   
+      </div>     
+  
+
+  
+
+  
 
 </div>

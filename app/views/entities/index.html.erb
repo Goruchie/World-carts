@@ -1,14 +1,36 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Entities</h1>
-
-<div id="entities">
-  <% @entities.each do |entity| %>
-    <%= render entity %>
-    <p>
-      <%= link_to "Show this entity", entity %>
-    </p>
-  <% end %>
+<div class='nav-section'>
+  <nav class='nav-container'>
+    <a class='logo' href="#">World carts</a>    
+    <h2 class='title'>Purchases</a>
+    <h2><%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'log-out-button' %></h2>      
+  </nav>
 </div>
 
-<%= link_to "New entity", new_entity_path %>
+<div class='page-cont'>
+  
+  <div class='total-cont'>
+    <div class='total-cont1'>
+    <h2>Total amount:</h2>
+    <h2>$<%= Group.total_amount(@group) %></h2>
+  </div>
+  </div>
+  
+  <br>
+  
+    <div id="entities">
+      <% @entities.each do |entity| %>
+        <%= render entity %>
+        <br>
+      <% end %>
+    </div>
+
+    <div class='add-store-btn'>
+      <div class='add-cart'>
+       <%= link_to "New purchase", new_group_entity_path, class: "log-out-button1" %>
+      </div>
+        
+      <div class='add-cart'>
+        <%= link_to "Back to groups", groups_path, class: "log-out-button1" %>
+    </div>
+    </div>
+</div>

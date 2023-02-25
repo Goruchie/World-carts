@@ -11,17 +11,21 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+<div class='add-store1'>
+  
+    <%= form.text_field :name, placeholder: "Store" %> 
+    
+    <%= form.text_field :icon, placeholder: "Icon" %> 
+ 
+<div class='add-store-btn'>
+  <div class='add-cart'>
+    <%= form.submit "Add cart", class: "submit-btn log-out-button1" %>
   </div>
 
-  <div>
-    <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
+    <div class='add-cart'>
+      <%= link_to "Back to groups", groups_path, class:' log-out-button1' %>
+    </div>
+</div>
+    
+<div>
 <% end %>

@@ -1,10 +1,21 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<div class='main-login'>
-  <a class='login-sign' href='/users/sign_in'>Log in</a>
-</div>
-    <div class='main-login'><a class='login-sign' href='/users/sign_up'>Sign up</a></div>
-
-    <div class='logout-button'>
-        <%= button_to 'Log out', destroy_user_session_path, method: :delete %>
+<%= render 'shared/header' %> 
+<div class='home-cont'>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class='main-login'>
+      <a class='log-out-button1' href='/users/sign_in'>Log in</a>
     </div>
+  <br>
+    <div class='main-login'>
+      <a class='log-out-button1' href='/users/sign_up'>Sign up</a>
+    </div>
+  <br>
+    <div class='main-login'>
+    <%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'log-out-button1' %>
+    </div>
+
+    
+</div>
+
