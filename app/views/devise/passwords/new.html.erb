@@ -1,0 +1,29 @@
+<div class='nav-section'>
+  <nav class='nav-container'>
+    <a class='logo' href="/"> < Back</a>    
+    <h2 class='title'>FORGOT?</a>
+    <h2><%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'log-out-xd' %></h2>      
+  </nav>
+</div>
+
+<div class='devise-cont'>
+
+
+<br>
+
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email' %>
+  </div>
+<div class='add-store-btn'>
+  <div class="add-cart"> 
+    <%= f.submit "Instructions", class:'green-btn'  %>
+  </div>
+</div>
+<% end %>
+
+
+</div>

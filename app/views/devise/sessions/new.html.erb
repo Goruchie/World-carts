@@ -1,0 +1,33 @@
+<div class='nav-section'>
+  <nav class='nav-container'>
+    <a class='logo' href="/"> < Back</a>    
+    <h2 class='title'>Log in</a>
+    <h2><%= button_to 'Log out', destroy_user_session_path, method: :delete, class: 'log-out-xd' %></h2>      
+  </nav>
+</div>
+
+<div class='devise-cont'>
+<br>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email' %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: 'Password' %>
+  </div>
+
+  <%= render "devise/shared/links" %>
+  
+<div class='add-store-btn'>
+  <div class="add-cart">    
+    <%= f.submit "Log in", class:'green-btn' %>
+  </div>
+</div>
+  
+<% end %>
+
+
+
+</div>

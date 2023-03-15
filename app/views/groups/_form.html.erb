@@ -1,0 +1,31 @@
+<%= form_with(model: group, url: groups_path(@group)) do |form| %>
+  <% if group.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(group.errors.count, "error") %> prohibited this group from being saved:</h2>
+
+      <ul>
+        <% group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class='add-store1'>
+  
+    <%= form.text_field :name, placeholder: "Store" %> 
+    
+    <%= form.text_field :icon, placeholder: "Icon" %> 
+ 
+<div class='add-store-btn'>
+  <div class='add-cart'>
+    <%= form.submit "Add cart", class: "submit-btn log-out-button1" %>
+  </div>
+
+    <div class='add-cart'>
+      <%= link_to "Back to carts", groups_path, class:' log-out-button1' %>
+    </div>
+</div>
+    
+<div>
+<% end %>

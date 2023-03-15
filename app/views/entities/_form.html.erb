@@ -1,0 +1,37 @@
+<%= form_with(model: [@group, @entity], url: group_entities_path(@group)) do |form| %>
+  <% if entity.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(entity.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+        <% entity.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div>    
+      <%= form.select :group_id, Group.all.collect {|group| [group. name, group.id]},{
+      include_blank: true} , :required => 'required',   class:"form-select", hidden: true %>
+    </div>
+
+    <div class='add-store1'>
+      <%= form.text_field :name, placeholder: "Name" %>
+   
+
+  
+      <%= form.number_field :amount, placeholder: "Amount" %>
+
+    
+<div class='add-store-btn'>
+    <div class='add-cart'>
+      <%= form.submit "Add purchase", class:' log-out-button1' %>
+    </div>
+
+    <div class='add-cart'>
+    <%= link_to "Back to purchases", group_entities_path, class:' log-out-button1' %>
+  </div>
+</div>
+
+<% end %>
