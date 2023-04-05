@@ -4,7 +4,7 @@
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
   <br/>
 
-  <h3><b>Budget app</b></h3>
+  <h3><b>World carts</b></h3>
 
 </div>
 
@@ -34,9 +34,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [budget_app] <a name="Budget app"></a>
+# 📖 [world-carts] <a name="World carts"></a>
 
-**[budget_app]** is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+**[world_carts]** is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -103,7 +103,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
   ```sh
-    git clone https://github.com/Goruchie/Budget-app.git
+    git clone https://github.com/Goruchie/World-carts.git
     cd Recipe-app
   ```
 
@@ -112,7 +112,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd Budget-app
+  cd World-carts
   bundle install
 ```
 
@@ -162,7 +162,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Goruchie/Budget-app/issues).
+Feel free to check the [issues page](https://github.com/Goruchie/World-carts/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
