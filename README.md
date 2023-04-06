@@ -67,7 +67,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Install Ruby on Rails framework]**
+- **Install Ruby on Rails framework**
 - **Use Ruby Gems as a software packages system**
 - **Use database migration files to maintain database schema**
 
@@ -146,15 +146,6 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[Implement_some_UX_improvements]**
-- [ ] **[Create_desktop_design]**
-- [ ] **[Implement_a_left_side_menu]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
