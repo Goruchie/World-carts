@@ -34,9 +34,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [world-carts] <a name="World carts"></a>
+# 📖 World carts <a name="World carts"></a>
 
-**[world_carts]** is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+**World carts** is a mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -67,9 +67,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Install_Ruby_on_Rails_framework]**
-- **[Use_Ruby_Gems_as_a_software_packages_system]**
-- **[Use_database_migration_files_to_maintain_database_schema]**
+- **Install Ruby on Rails framework]**
+- **Use Ruby Gems as a software packages system**
+- **Use database migration files to maintain database schema**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
